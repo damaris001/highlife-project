@@ -1,0 +1,60 @@
+header {
+  &.lifeblood {
+    .header-1 {
+      padding: 0;
+      .header-1__img {
+        width: 100%;
+      }
+    }
+    .header-2 {
+      background: #f5f5f5;
+      h1 {
+        font-size: 3rem;
+        color: #333;
+      }
+      .lifeblood__header-nav {
+        color: #333;
+
+        a:hover {
+          color: #ff0000;
+        }
+        span {
+        }
+      }
+    }
+    .arm {
+      height: 150px;
+      width:100%;
+      position: relative;
+      background-color: $mid-green;
+      img {
+        position: absolute;
+        top: 50%;  
+        left: 0;
+        width: 55%;
+        transform: translate(0 ,-50%);
+      }
+    }
+
+    .question {
+      position: relative;
+
+      img {
+        position: absolute;
+        width: 100%;
+      }
+    }
+    .atm {
+      position: relative;
+      background-color: $light-orange;
+
+      img {
+        position: absolute;
+        width: 40%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 100%);
+      }
+    }
+  }
+}

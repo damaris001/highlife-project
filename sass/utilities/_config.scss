@@ -1,0 +1,83 @@
+// Font Stacks
+
+//$font-url : 'https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Playfair+Display:700';
+
+@mixin do-font-face($name, $file-name, $url, $type, $weight, $style){
+  @font-face {
+    font-family: $name;
+    //src: url(#{$url + $file-name}.eot);
+    //src: url(#{$url + $file-name}.eot?#iefix) format('embedded-opentype');
+    @if $type == "otf"{
+      src: url(#{$url + $file-name}.otf) format('opentype');
+    }
+    @if $type == "ttf"{
+      src: url(#{$url + $file-name}.ttf) format('truetype');
+    }
+    @if $type == "woff"{
+      src: url(#{$url + $file-name}.woff);
+    }
+    @if $type == "woff2"{
+      src: url(#{$url + $file-name}.woff2);
+    }
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+
+
+@include do-font-face('Karla', 'Karla-Regular', '../fonts/', 'ttf', 500, normal);
+
+@include do-font-face('Roboto', 'Roboto-Regular', '../fonts/', 'ttf', normal, normal);
+@include do-font-face('Roboto', 'Roboto-Bold', '../fonts/', 'ttf', bold, normal);
+@include do-font-face('DDIN', 'D-DIN', '../fonts/', 'otf', normal, normal);
+@include do-font-face('DDIN', 'D-DIN-Bold', '../fonts/', 'otf', bold, normal);
+@include do-font-face('Quicksand', 'Quicksand-Regular', '../fonts/', 'ttf', normal, normal);
+@include do-font-face('Quicksand', 'Quicksand-Medium', '../fonts/', 'ttf', 500, normal);
+
+
+
+
+
+$karla       : 'Karla', sans-serif;
+$roboto         : 'Roboto', sans-serif;
+$ddin           : 'DDIN', sans-serif;
+$quicksand      : 'Quicksand', sans-serif;
+
+
+
+$normal         : normal;
+$bold           : bold;
+$extra-bold     : bolder;
+$light          : 100;
+
+// Colors
+
+$dark-green  : #0f6b2d;
+$mid-green   :  #28c56e;
+$light-green  :  #61d495;
+$light-orange: #f4ae17;
+
+
+
+
+$dark-grey   : #909090;
+$mid-grey    : #C4C4C4;
+$light-grey  : #E7E7E7;
+$white-smoke : #F6F6F6 ;
+$dim-grey    : #686868;
+$black-backgorund : #232323;
+
+$border-color : #DDDDDD;
+$footer-bg    : #2D2D2D;
+
+//icomoon
+// twitter
+// facebook
+// instagram
+// search-icon
+// pinterest
+// playicon
+// forward
+// next
+// previous

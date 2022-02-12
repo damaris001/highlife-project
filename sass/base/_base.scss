@@ -1,0 +1,26 @@
+html, body {
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+body {
+ 
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+
+a {
+  
+  color: #333;
+  text-decoration: none;
+
+  &:hover {
+    color: #333;
+
+  }
+}
+
+.container{
+  padding:0 20rem;
+}

@@ -1,0 +1,29 @@
+nav {
+ 
+  &.navbar {
+    font-family: $karla;
+    display: flex;
+   
+
+    .navbar-items {
+      display: flex;
+      justify-content: center;
+      
+    }
+    .navbar-nav {
+      .nav-link {
+        font-size: 2rem;
+        color:#333;
+        letter-spacing: .1rem;
+        line-height: .3rem;
+       
+      }
+    }
+  }
+
+  .user-account {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
