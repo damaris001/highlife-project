@@ -219,11 +219,14 @@ th {
 
 html, body {
   overflow-x: hidden;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  box-sizing: border-box; }
 
 body {
-  color: #fff;
-  font-size: 1.6rem; }
+  color: #333;
+  font-size: 2rem;
+  font-family: "Karla", sans-serif;
+  font-weight: 600; }
 
 a {
   color: #333;
@@ -233,6 +236,32 @@ a {
 
 .container {
   padding: 0 20rem; }
+
+.submit h1 {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: bolder;
+  color: #070606;
+  letter-spacing: -2px;
+  font-family: "PlayfairDisplay Bold", sans-serif; }
+
+.submit h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #565656;
+  font-family: "Oswald-regular", sans-serif;
+  margin-top: -15px; }
+
+.submit .input-group {
+  width: 30%;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem; }
+
+.submit.text {
+  background-color: #070606;
+  color: #fff;
+  align-items: center;
+  justify-content: center; }
 
 .btn {
   border: 1px solid #fff;
@@ -245,8 +274,17 @@ a {
     color: #fff;
     margin-left: auto; }
 
-section.main .lifeblood-main {
-  display: flex; }
+section.container-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  grid-gap: 20px;
+  margin-left: 5px; }
+
+section figcaption {
+  width: 180px; }
 
 a {
   text-decoration: none; }
@@ -268,6 +306,10 @@ nav .user-account {
   flex-direction: row;
   gap: 1rem; }
 
+footer {
+  align-items: center;
+  justify-content: center; }
+
 header.lifeblood .header-1 {
   padding: 0; }
   header.lifeblood .header-1 .header-1__img {
@@ -287,26 +329,63 @@ header.lifeblood .arm {
   height: 150px;
   width: 100%;
   position: relative;
-  background-color: #28c56e; }
+  background-color: #28c56e;
+  margin: 0 -8px; }
   header.lifeblood .arm img {
     position: absolute;
     top: 50%;
     left: 0;
     width: 55%;
     transform: translate(0, -50%); }
+  header.lifeblood .arm h3 {
+    font-size: 2rem;
+    font-family: "Karla", sans-serif;
+    position: absolute;
+    text-align: center;
+    text-transform: capitalize;
+    top: 60%;
+    left: 30%;
+    transform: translate(50%, 50%); }
 
 header.lifeblood .question {
-  position: relative; }
+  position: relative;
+  padding-right: 5rem;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
   header.lifeblood .question img {
     position: absolute;
     width: 100%; }
+  header.lifeblood .question h3 {
+    font-family: "Karla", sans-serif;
+    font-size: 2rem;
+    position: relative;
+    color: #fff;
+    text-transform: capitalize;
+    top: 50%;
+    left: 150%;
+    transform: translate(-50%, 100%); }
 
 header.lifeblood .atm {
   position: relative;
-  background-color: #f4ae17; }
+  background-color: #f4ae17;
+  height: 150px;
+  padding: 10px 10px;
+  margin: 0 10px; }
   header.lifeblood .atm img {
     position: absolute;
     width: 40%;
-    top: 50%;
+    top: -40%;
     left: 50%;
-    transform: translate(-50%, 100%); }
+    transform: translate(-50%, 100%);
+    margin: 10px 10px;
+    padding: 10px 10px; }
+  header.lifeblood .atm h3 {
+    font-family: "Karla", sans-serif;
+    position: absolute;
+    text-align: center;
+    text-transform: capitalize;
+    top: 60%;
+    left: 62%;
+    transform: translate(50%, 50%);
+    font-size: 2rem; }

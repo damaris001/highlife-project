@@ -1,12 +1,15 @@
 html, body {
   overflow-x: hidden;
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
  
-  color: #fff;
-  font-size: 1.6rem;
+  color:#333;
+  font-size: 2rem;
+  font-family: $karla;
+  font-weight: 600;
 }
 
 

@@ -1,124 +1,206 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Highlife</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg container-fluid">
-      <div class="navbar-img">
-        <a class="navbar-brand" href="#"><img src="/img/logo.png" alt="" /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-
-      <div class="navbar-items collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"
-              >Highlife Church</a
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Highlife</title>
+      </head>
+      <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg container-fluid">
+          <div class="navbar-img">
+            <a class="navbar-brand" href="#"><img src="/img/logo.png" alt="" /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Life Blood</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Niara</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Music</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Carlton Williams</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Store</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Highlife Tv</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Events</a>
-          </li>
-        </ul>
-      </div>
-      <div class="user-account">
-        <div>
-          <img src="/img/user.png" alt="user-logo" class="user-logo" />
-        </div>
-        <div>
-          <img src="/img/shopping-cart.png" alt="user-logo" class="user-logo" />
-        </div>
-        <div type="button" class="btn">
-          <a href="#" class="signup-btn">Signup/Login</a>
-        </div>
-      </div>
-    </nav>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
 
-    <!-- Lifeblood Header -->
-    <header class="lifeblood container">
-      <div class="row">
-        <div class="header-1 col-sm-8">
-          <img class="header-1__img" src="img/tv-1.png" alt="Cells Image" />
+          <div class="navbar-items collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Highlife Church</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Life Blood</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Niara</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Music</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Carlton Williams</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Store</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Highlife Tv</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+            </ul>
+          </div>
+          <div class="user-account">
+            <div>
+              <img src="/img/user.png" alt="user-logo" class="user-logo" />
+            </div>
+            <div>
+              <img src="/img/shopping-cart.png" alt="user-logo" class="user-logo" />
+            </div>
+            <!-- Signup Button -->
+            <div type="button" class="btn">
+              <a href="#" class="signup-btn">Signup/Login</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Header -->
+        <header class="lifeblood container">
+          <div class="row">
+            <div class="header-1 col-sm-8">
+              <img class="header-1__img" src="img/tv-1.png" alt="Cells Image" />
+            </div>
+            <div class="header-2 col-sm-4">
+              <h1>Life <br> Blood</h1>
+              <div class="lifeblood__header-nav">
+                <a href="#">Abouts</a> <span style="color:red"></span>
+                <a href="#">Contacts </a><span> </span>
+                <a href="#">Events</a>
+              </div>
+            </div>
+          </div> 
+          <div class="row">
+            <div class="col-sm-4 ">
+              <div class="arm">
+                <img src="img/arm.png"  alt="">
+                <p><h3>Get involved</h3></p>
+              </div>
+            </div>
+            <div class="col-sm-4" >
+              <div class="question">
+                <img src="img/question.png" alt="">
+              <p><h3>FAQ</h3></p>
+              </div>
+            </div>
+            <div class="col-sm-4"> 
+              <div class="atm">
+                <img src="img/atm.png" alt="">
+                <p><h3>Give</h3></p>
+              </div>
+            </div>
+          </div>
+        </header>
+        
+      <!-- Section -->
+      <section class="container-content">
+          <div class="container-first">
+                <img src="img/lifeblood-1.png" alt="">
+                <figcaption>30 blood donations myths prevalent in Nigeria</figcaption>
+            </div>
+            <div class="container-second">
+                <img src="img/lifeblood-2.png" alt="">
+                <figcaption>Life Blood Nigeria Testimonials - Docuseries</figcaption>
+            </div>
+      </section>
+      <section class="container-content">
+        <div class="container-first">
+              <img src="img/lifeblood-3.png" alt="">
+              <figcaption>Blood count boosters</figcaption>
+          </div>
+          <div class="container-second">
+              <img src="img/lifeblood-4.png" alt="">
+              <figcaption>World Blood Donor Day Celebration</figcaption>
+          </div>
+          <div class="container-third">
+            <img src="img/lifeblood-5.png" alt="">
+            <figcaption>Testimonials: How Keji was saved by a blood donor</figcaption>
         </div>
-        <div class="header-2 col-sm-4">
-          <h1>Life <br> Blood</h1>
-          <div class="lifeblood__header-nav">
-            <a href="#">Abouts</a> <span style="color:red"></span>
-            <a href="#">Contacts </a><span> </span>
-            <a href="#">Events</a>
+    </section>
+    <section class="container-content">
+      <div class="container-first">
+            <img src="img/lifeblood-6.png" alt="">
+            <figcaption>Blood Donation Sentitization In Ipaja</figcaption>
+        </div>
+        <div class="container-second">
+            <img src="img/lifeblood-7.png" alt="">
+            <figcaption>Life Blood Nigeria Testimonials - Docuseries</figcaption>
+        </div>
+        <div class="container-third">
+          <img src="img/lifeblood-8.png" alt="">
+          <figcaption>All you need to know about blood types and groups</figcaption>
+      </div>
+  </section>
+  <section class="container-content">
+    <div class="container-first">
+          <img src="img/lifeblood-9.png" alt="">
+          <figcaption>World Blood Donor 2019 celebration</figcaption>
+      </div>
+      <div class="container-second">
+          <img src="img/lifeblood-10.png" alt="">
+          <figcaption>The definitive article on blood  diseases</figcaption>
+      </div>
+  </section>
+  <!-- LifeBlood Archives Button -->
+  <div type="button" class="btn">
+    <a href="#" class="archives-btn">LifeBlood Archives</a>
+  </div>
+
+  <section class="submit">
+    <div>
+      <h1>Be a Part of the High Life World</h1>
+      <h2>Join Our Mailing List</h2>
+      <form class="submit">
+        <div class="input-group">
+          <input type="text"
+                 class="form-control"
+                 placeholder="email@example.com"
+          />
+          <div class="input-group-add">
+            <span class="input-group-text"> Subscribe</span>
           </div>
         </div>
-      </div> 
-      <div class="row">
-        <div class="col-sm-4 ">
-          <div class="arm">
-            <img src="img/arm.png"  alt="">
-          </div>
-        </div>
-        <div class="col-sm-4" >
-          <div class="question">
-            <img src="img/question.png" alt="">
-          </div>
-         </div>
-         <div class="col-sm-4"> 
-           <div class="atm">
-            <img src="img/atm.png" alt="">
-           </div>
-         </div>
-      </div>
-    </header>
+      </form>
+    </div>
+  </section>
 
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
+  <footer>
 
-<!-- 
-  nav
-  header
-  main
-  section
- -->
+  </footer>
+
+
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+          crossorigin="anonymous"
+        ></script>
+      </body>
+    </html>
+
+    <!-- 
+      nav
+      header
+      main
+      section
+    -->

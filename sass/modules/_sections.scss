@@ -1,17 +1,15 @@
 section{
-    &.main{
-
-        .lifeblood-main{
-            display:flex;
-            
-
-
-            .lifeblood__img{
-               
-               
-             
-            }
-        }
+    &.container-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        grid-gap: 20px;
+        margin-left: 5px;
     }
-    
+    figcaption{
+        width:180px;
+        
+    }
 }

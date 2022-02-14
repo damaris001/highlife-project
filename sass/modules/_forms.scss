@@ -1,0 +1,29 @@
+.submit{
+    h1{
+        text-align: center;
+        font-size: 3.2rem;
+        font-weight: bolder;
+        color: #070606;
+        letter-spacing: -2px;
+        font-family: "PlayfairDisplay Bold", sans-serif;
+    }
+    h2{
+        text-align: center;
+        font-size: 2.5rem;
+        color: #565656;
+        font-family: "Oswald-regular", sans-serif;
+        margin-top: -15px;
+    }
+    .input-group{
+        width: 30%;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+    }
+    &.text{
+        background-color: #070606;
+        color: #fff;         
+        align-items: center;
+        justify-content: center;
+    }
+
+}
