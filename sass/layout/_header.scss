@@ -11,9 +11,33 @@
         h1 {
           font-size: 3rem;
           color: #333;
+         
+        }
+        span {
+           background-color: #dd1725;
+           display: block;
+           width: 5rem;
+           height: .5rem;
         }
         .lifeblood__header-nav {
           color: #333;
+
+          a{
+            position: relative;
+            margin-right: 1rem;
+          }
+        a:not(:last-child)::after{
+          content: "";
+          background-color: #dd1725;
+          display: inline-block;
+          width: 0.3rem;
+          height: 3rem;
+          position: absolute;
+          top: -3px;
+          right: -9px;
+
+          
+        }
 
           a:hover {
             color: #ff0000;
@@ -22,29 +46,26 @@
           }
         }
       }
+      .header-3 {
+        font-family:$karla;
+        color: #fff;
+        position:absolute;
+        bottom: 15px;
+        right:30px;
+        font-size: 2.5rem;
+        font-weight:$bold ;
+      }
       .arm {
-        height: 150px;
+        height: 200px;
         width:100%;
         position: relative;
         background-color: $mid-green;
-        margin: 0 -8px;
         img {
           position: absolute;
           top: 50%;  
           left: 0;
           width: 55%;
           transform: translate(0 ,-50%);
-        }
-        h3{
-          
-          font-size: $base-font-size;
-          font-family:$karla;
-          position:absolute;
-          text-align: center;
-          text-transform:capitalize;
-          top:60%;
-          left:30%;
-          transform: translate(50%, 50%);
         }
       }
 
@@ -57,48 +78,30 @@
 
         img {
           position: absolute;
-          width:100%;       
-      }
-          h3{
-        font-family:$karla;
-        font-size: $base-font-size;
-        position:relative;
-        color:#fff;
-        text-transform: capitalize;
-        top: 50%;
-        left: 150%;
-        transform: translate(-50%, 100%);
-
+          width:100%;  
+          top:50%;
+          left:50%;
+          transform: translate(-50% , -50%);     
       }
     }
       // ATM Image
       .atm {
         position: relative;
         background-color: #f4ae17;
-        height: 150px;
-        padding: 10px 10px;
-        margin:0 10px;
+        height: 100%;
 
         img {
           position: absolute;
           width: 40%;
-          top: -40%;
+          top: 50%;
           left: 50%;
-          transform: translate(-50%, 100%);
+          transform: translate(-50%, -50%);
           margin:10px 10px;
           padding:  10px 10px;
         }
-        h3{
-          font-family:$karla;
-          position:absolute;
-          text-align: center;
-          text-transform:capitalize;
-          top:60%;
-          left:62%;
-          transform: translate(50%, 50%);
-          font-size: $base-font-size;
-        }
+
+       
       }
     }
-  }
   
+  }
