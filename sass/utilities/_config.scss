@@ -26,10 +26,10 @@
 
 
 
-@include do-font-face('Karla', 'Karla-Regular', '../fonts/', 'ttf', 500, normal);
+@include do-font-face('Karla', 'Karla-Regular', '../fonts/', 'ttf', normal, normal);
 
-@include do-font-face('Roboto', 'Roboto-Regular', '../fonts/', 'ttf', normal, normal);
-@include do-font-face('Roboto', 'Roboto-Bold', '../fonts/', 'ttf', bold, normal);
+@include do-font-face('Karla-b', 'Karla-Bold', '../fonts/', 'ttf', normal, normal);
+@include do-font-face('Playfair-b', 'PlayfairDisplay-Bold', '../fonts/', 'ttf', bold, normal);
 @include do-font-face('DDIN', 'D-DIN', '../fonts/', 'otf', normal, normal);
 @include do-font-face('DDIN', 'D-DIN-Bold', '../fonts/', 'otf', bold, normal);
 @include do-font-face('Quicksand', 'Quicksand-Regular', '../fonts/', 'ttf', normal, normal);
@@ -39,15 +39,16 @@
 
 //Font-color
 $white : #fff;
+$black:#333;
 
 //Font-size
-$base-font-size: 2rem;
+$base-font-size: 1rem;
 
 //Font family
-$karla       : 'Karla', sans-serif;
-$roboto         : 'Roboto', sans-serif;
-$ddin           : 'DDIN', sans-serif;
-$quicksand      : 'Quicksand', sans-serif;
+$karla    : 'Karla', sans-serif;
+$karla-b  :'Karla-b', sans-serif;
+$playfair-b : 'playfair-b', sans-serif;
+$quicksand : 'Quicksand', sans-serif;
 
 
 //Font -weight
