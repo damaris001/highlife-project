@@ -3,13 +3,14 @@
     color: white;
     background-color: $mid-green;
     transition: all .2s;
-
     
     .signup-btn{
-     font-size: 1.5rem;
+     font-size:1.5rem;
      text-decoration: none;
      color:#fff;
      margin-left: auto;
+     padding:1rem;
+     
    }
     
   .archives-link {
@@ -17,7 +18,18 @@
     font-family: $karla-b;
     padding: 1rem;
     letter-spacing: 0;
+    font-family: $karla-s;
+    padding-bottom: 7rem;
 
   }
 }
-
+.view-btn{
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0 4.5rem;
+  background-color: $mid-green;
+}
+.shop-button {
+  background-color: $pink;
+  padding: 1rem;
+}

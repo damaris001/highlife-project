@@ -1,6 +1,22 @@
 footer {
   align-items: center;
   justify-content: center;
- 
+  
+
+  .navbar-nav {
+
+    .nav-link{
+      font-family: $oswald-r;
+      font-size:20rem;
+    }
+  }
+
+  .icons{
+    img{
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
 }
+
 

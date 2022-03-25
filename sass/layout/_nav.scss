@@ -1,23 +1,30 @@
 nav {
- 
   &.navbar {
     font-family: $karla;
     display: flex;
-   
 
     .navbar-items {
       display: flex;
       justify-content: center;
-      
     }
     .navbar-nav {
       .nav-link {
-        font-size: 2rem;
-        color:#333;
-        line-height: .3rem;
+        font-size: 1.5rem;
+        color: #333;
+        line-height: 0.2rem;
+        font-family: $karla-s;
 
-       
+        :hover {
+          border-bottom: 2px $black;
+          color: orangered;
+        }
       }
+    }
+    .nav-search {
+      width: 2rem;
+      height: 2rem;
+      filter: invert(56%) sepia(66%) saturate(522%) hue-rotate(94deg)
+        brightness(101%) contrast(83%);
     }
   }
 
@@ -25,5 +32,6 @@ nav {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+   
   }
 }

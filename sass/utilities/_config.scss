@@ -29,9 +29,11 @@
 @include do-font-face('Karla', 'Karla-Regular', '../fonts/', 'ttf', normal, normal);
 
 @include do-font-face('Karla-b', 'Karla-Bold', '../fonts/', 'ttf', normal, normal);
+@include do-font-face('Karla-i', 'Karla-Italic', '../fonts/', 'ttf', normal, normal);
+@include do-font-face('Karla-s', 'Karla-SemiBold', '../fonts/', 'ttf', normal, normal);
 @include do-font-face('Playfair-b', 'PlayfairDisplay-Bold', '../fonts/', 'ttf', bold, normal);
-@include do-font-face('DDIN', 'D-DIN', '../fonts/', 'otf', normal, normal);
-@include do-font-face('DDIN', 'D-DIN-Bold', '../fonts/', 'otf', bold, normal);
+@include do-font-face('Oswald-r', 'Oswald-Regular', '../fonts/', 'ttf', normal, normal);
+@include do-font-face('Richie','Richie-Brusher', '../fonts/', 'ttf', bold, normal);
 @include do-font-face('Quicksand', 'Quicksand-Regular', '../fonts/', 'ttf', normal, normal);
 @include do-font-face('Quicksand', 'Quicksand-Medium', '../fonts/', 'ttf', 500, normal);
 
@@ -47,8 +49,11 @@ $base-font-size: 1rem;
 //Font family
 $karla    : 'Karla', sans-serif;
 $karla-b  :'Karla-b', sans-serif;
+$karla-s: 'Karla-s', sans-serif;
+$karla-i: 'Karla-i', sans-serif;
 $playfair-b : 'playfair-b', sans-serif;
-$quicksand : 'Quicksand', sans-serif;
+$oswald-r : 'Oswald-r', sans-serif;
+$richie : 'Richie' , sans-serif;
 
 
 //Font -weight
@@ -57,11 +62,17 @@ $bold           : bold;
 $extra-bold     : 800;
 $light          : 100;
 
+
+
 // Colors
+$black: #000;
 $dark-green  : #0f6b2d;
 $mid-green   :  #28c56e;
 $light-green  :  #61d495;
 $light-orange: #f4ae17;
+$white:#ffffff;
+$grey:#f5f5f5;
+$pink:#ff0088;
 
 // $dark-grey   : #909090;
 // $mid-grey    : #C4C4C4;
@@ -85,3 +96,18 @@ $light-orange: #f4ae17;
 // forward
 // next
 // previous
+
+.mt-n2 {
+  margin-top: -2rem;
+}
+
+.mt-n1 {
+  margin-top: -.4rem;
+}
+.mt-n4{
+  margin-top: -4rem;
+}
+.mr-n5{
+  margin-right: -5rem;
+}
+

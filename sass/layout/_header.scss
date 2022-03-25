@@ -1,107 +1,201 @@
-  header {
-    &.lifeblood {
-      .header-1 {
-        padding: 0;
-        .header-1__img {
-          width: 100%;
-        }
-      }
-      .header-2 {
-        background: #f5f5f5;
-        h1 {
-          font-size: 3rem;
-          color: #333;
-         
-        }
-        span {
-           background-color: #dd1725;
-           display: block;
-           width: 5rem;
-           height: .5rem;
-        }
-        .lifeblood__header-nav {
-          color: #333;
+header {
+  .banner-link img {
+    transition: all 0.3s;
+  }
+  .banner-link:hover img {
+    filter: saturate(1.5);
+  }
+  &.lifeblood {
+    font-family: $karla-s;
+    .header-1 {
+      padding: 0;
 
-          a{
-            position: relative;
-            margin-right: 1rem;
-          }
-        a:not(:last-child)::after{
+      .header-1__img {
+        width: 100%;
+      }
+    }
+    .header-2 {
+      background: #f5f5f5;
+      h1 {
+        font-size: 3rem;
+        color: #333;
+      }
+      span {
+        background-color: #dd1725;
+        display: block;
+        width: 4rem;
+        height: 0.3rem;
+      }
+      .lifeblood__header-nav {
+        color: #333;
+        font-family: $karla;
+
+        a {
+          position: relative;
+          margin-right: 1rem;
+        }
+        a:not(:last-child)::after {
           content: "";
           background-color: #dd1725;
           display: inline-block;
-          width: 0.3rem;
-          height: 3rem;
+          width: 0.1rem;
+          height: 2rem;
           position: absolute;
           top: -3px;
           right: -9px;
-
-          
         }
 
-          a:hover {
-            color: #ff0000;
-          }
-          span {
-          }
+        a:hover {
+          color: #ff0000;
+        }
+        span {
         }
       }
-      .header-3 {
-        font-family:$karla;
-        color: #fff;
-        position:absolute;
-        bottom: 15px;
-        right:30px;
-        font-size: 2.5rem;
-        font-weight:$bold ;
-      }
-      .arm {
-        height: 200px;
-        width:100%;
-        position: relative;
-        background-color: $mid-green;
-        img {
-          position: absolute;
-          top: 50%;  
-          left: 0;
-          width: 55%;
-          transform: translate(0 ,-50%);
-        }
-      }
+    }
+    .header-3 {
+      font-family: $karla-s;
+      color: #fff;
+      position: absolute;
+      bottom: 15px;
+      right: 30px;
+      font-size: 2.5rem;
+      font-weight: $bold;
+    }
 
-      .question {
-        position: relative;
-        padding-right: 5rem;
-        height: 100%;
+    //Arm image
+
+    .arm {
+      height: 200px;
+      width: 100%;
+      position: relative;
+      background-color: $mid-green;
+
+      &:hover img {
+        //background-color: red;
+        //transform: scale(1.05);
+      }
+      img {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 55%;
+        transform: translate(0, -50%);
+      }
+    }
+
+    //Question image
+    .question {
+      position: relative;
+      padding-right: 5rem;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+
+      img {
+        position: absolute;
         width: 100%;
-        overflow: hidden;
-
-        img {
-          position: absolute;
-          width:100%;  
-          top:50%;
-          left:50%;
-          transform: translate(-50% , -50%);     
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
     }
-      // ATM Image
-      .atm {
-        position: relative;
-        background-color: #f4ae17;
-        height: 100%;
 
-        img {
-          position: absolute;
-          width: 40%;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          margin:10px 10px;
-          padding:  10px 10px;
-        }
+    // ATM Image
+    .atm {
+      position: relative;
+      background-color: #f4ae17;
+      height: 100%;
 
-       
+      img {
+        position: absolute;
+        width: 40%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 10px 10px;
+        padding: 10px 10px;
       }
     }
-  
   }
+
+  &.highlifetv {
+    background-color: $black;
+    min-height: max-content;
+
+    h1 {
+      font-size: 3rem;
+      color: $mid-green;
+    }
+    .main-text {
+      font-family: $karla-i;
+      font-size: 2rem;
+    }
+    .highlifetv__row {
+      padding: 5rem 0;
+    }
+    .highlifetv__img {
+      img {
+        width: 100%;
+        height: 33rem;
+        object-fit: cover;
+      }
+    }
+    .icons {
+      img {
+        filter: invert(100%) sepia(0%) saturate(7488%) hue-rotate(354deg)
+          brightness(120%) contrast(98%);
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+  &.store {
+    .store__banner {
+      background: url(/img/main-img.png) no-repeat center center;
+      height: 65vh;
+    }
+    .store__text--one {
+      font-family: $richie;
+      font-size: 5rem;
+      color: $pink;
+    }
+  }
+  &.store_product {
+    .container {
+      padding: 0 10rem;
+    }
+    .icons {
+      img {
+        color: $mid-green;
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+  .highlife {
+    background:url(/img/niara-1.png);
+    max-width: 100%;
+    height:40rem;
+    background-size: cover ;
+    background-position: center;
+  }
+  .photo-one {
+    background:url(/img/niara-2.png);
+    max-width: 100%;
+    height:20rem;
+    background-size: cover ;
+    background-position: center;
+  }
+  .photo-two {
+    background:url(/img/niara-3.png);
+    max-width: 100%;
+    margin-top: 1rem;
+    height:19rem;
+    background-size: cover ;
+    background-position: center;
+  }
+  .highlife__text{
+   background-color: $mid-green;
+   padding : 0 1rem;
+  }
+}

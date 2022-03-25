@@ -11,20 +11,32 @@
   font-style: normal; }
 
 @font-face {
+  font-family: "Karla-i";
+  src: url(../fonts/Karla-Italic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Karla-s";
+  src: url(../fonts/Karla-SemiBold.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: "Playfair-b";
   src: url(../fonts/PlayfairDisplay-Bold.ttf) format("truetype");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: "DDIN";
-  src: url(../fonts/D-DIN.otf) format("opentype");
+  font-family: "Oswald-r";
+  src: url(../fonts/Oswald-Regular.ttf) format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: "DDIN";
-  src: url(../fonts/D-DIN-Bold.otf) format("opentype");
+  font-family: "Richie";
+  src: url(../fonts/Richie-Brusher.ttf) format("truetype");
   font-weight: bold;
   font-style: normal; }
 
@@ -39,6 +51,21 @@
   src: url(../fonts/Quicksand-Medium.ttf) format("truetype");
   font-weight: 500;
   font-style: normal; }
+
+.mt-n2 {
+  margin-top: -2rem; }
+
+.mt-n1 {
+  margin-top: -.4rem; }
+
+.mt-n4 {
+  margin-top: -4rem; }
+
+.mr-n5 {
+  margin-right: -5rem; }
+
+@keyframes display {
+  from { } }
 
 html {
   font-family: sans-serif;
@@ -226,8 +253,7 @@ html, body {
 body {
   color: #333;
   font-size: 1.5rem;
-  font-family: "Karla", sans-serif;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   margin: 0; }
 
 a {
@@ -235,15 +261,6 @@ a {
   text-decoration: none; }
   a:hover {
     color: #333; }
-
-.container {
-  padding: 0 10rem;
-  padding-right: 2rem; }
-
-h2, p {
-  margin: 0;
-  padding: 0;
-  line-height: 1.2; }
 
 .submit h1 {
   text-align: center;
@@ -261,8 +278,8 @@ h2, p {
   margin-top: -15px; }
 
 .submit .input-group-text {
-  background-color: #333;
-  color: #fff; }
+  background-color: #000;
+  color: #ffffff; }
 
 .btn {
   border: 1px solid #fff;
@@ -273,67 +290,181 @@ h2, p {
     font-size: 1.5rem;
     text-decoration: none;
     color: #fff;
-    margin-left: auto; }
+    margin-left: auto;
+    padding: 1rem; }
   .btn .archives-link {
-    color: #fff;
+    color: #ffffff;
     font-family: "Karla-b", sans-serif;
     padding: 1rem;
-    letter-spacing: 0; }
+    letter-spacing: 0;
+    font-family: "Karla-s", sans-serif;
+    padding-bottom: 7rem; }
 
-section .gallery {
-  margin-bottom: 10rem; }
+.view-btn {
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0 4.5rem;
+  background-color: #28c56e; }
 
-section.content .our-world__content {
+.shop-button {
+  background-color: #ff0088;
+  padding: 1rem; }
+
+section .banner-link img {
+  transition: all 0.3s; }
+
+section .banner-link:hover img {
+  filter: saturate(1.5); }
+
+section .video-one {
+  font-family: "Karla", sans-serif;
+  font-size: 2rem;
+  padding: 0 auto;
+  margin: 2rem auto 0; }
+
+section .border-green {
+  background-color: #28c56e;
+  height: 3px;
+  width: 15%;
+  border-radius: 5px; }
+
+section .book-collection .overlay {
   background-color: #f5f5f5; }
 
-section.content .our-world__header {
-  position: relative; }
-  section.content .our-world__header::after {
-    transform: translateX(50%);
-    position: absolute;
-    content: "";
-    background-color: #111111;
-    height: 0.5rem;
-    width: 16rem;
-    bottom: -10px;
-    right: 50%; }
+section .book-collection .overlay2 {
+  background-color: #f5f5f5;
+  opacity: 80%;
+  display: none;
+  height: 100%;
+  left: 0;
+  top: 0; }
+  section .book-collection .overlay2 .overlay2__view {
+    height: 100%;
+    outline: 0.1rem solid #28c56e; }
 
-section.content .our-world__subheader {
-  margin-left: 4rem;
-  padding-top: 3rem;
-  padding-right: 3rem; }
-  section.content .our-world__subheader p {
+section .book-collection .cart {
+  display: none; }
+  section .book-collection .cart .cart-text {
     color: #28c56e; }
 
-section .event__content {
-  background-color: #f5f5f5; }
+section .book-collection :hover .overlay2 {
+  display: block;
+  transition: all 0.2s; }
 
-section .event__header {
-  position: relative; }
-  section .event__header::after {
-    transform: translate(50%);
-    position: absolute;
-    content: "";
-    background-color: #111111;
-    height: 0.4rem;
-    width: 15rem;
-    bottom: -10px;
-    right: 50%;
+section .book-collection :hover .cart {
+  display: block;
+  transition: all 0.2s; }
+
+section.lifeblood__content {
+  font-family: "Karla-s", sans-serif; }
+  section.lifeblood__content .page-text {
+    font-family: "Karla-b", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 0;
     margin: 0; }
+  section.lifeblood__content .mid-text {
+    font-family: "Karla-i", sans-serif;
+    font-size: 1.3rem; }
+  section.lifeblood__content .gallery {
+    margin-bottom: 10rem; }
+  section.lifeblood__content .our-world .our-world__content {
+    background-color: #f5f5f5; }
+    section.lifeblood__content .our-world .our-world__content .our-world__header {
+      font-family: "Oswald-r", sans-serif;
+      font-weight: 300;
+      font-size: 4rem;
+      border-bottom: 3px solid #111111;
+      padding: 0 auto;
+      margin: 2rem auto;
+      width: max-content; }
+    section.lifeblood__content .our-world .our-world__content .our-world__subheader {
+      margin-left: 4rem;
+      padding-top: 3rem;
+      padding-right: 3rem; }
+      section.lifeblood__content .our-world .our-world__content .our-world__subheader p {
+        color: #28c56e; }
+  section.lifeblood__content .our-world .event {
+    padding-top: 2rem; }
+    section.lifeblood__content .our-world .event__content {
+      background-color: #f5f5f5; }
+    section.lifeblood__content .our-world .event__header {
+      font-family: "Oswald-r", sans-serif;
+      font-weight: 300;
+      font-size: 4rem;
+      border-bottom: 3px solid #111111;
+      padding: 0 auto;
+      margin: 2rem auto;
+      width: max-content; }
+    section.lifeblood__content .our-world .event__text {
+      padding-left: 2rem; }
+      section.lifeblood__content .our-world .event__text p {
+        color: #28c56e; }
+  section.lifeblood__content .our-world .store-content {
+    height: 15rem; }
+    section.lifeblood__content .our-world .store-content img {
+      height: 70%;
+      object-fit: cover; }
 
-section .event__text {
-  padding-left: 2rem; }
-  section .event__text p {
-    color: #28c56e; }
-
-section .store-content {
+section.highlifetv__videos .photos {
   height: 15rem; }
-  section .store-content img {
-    height: 70%;
+  section.highlifetv__videos .photos img {
+    height: 100%;
+    width: 100%;
     object-fit: cover; }
 
-a {
-  text-decoration: none; }
+section.highlifetv__videos .video-one {
+  font-family: "Karla", sans-serif;
+  font-size: 2rem;
+  padding: 0 auto;
+  margin: 2rem auto 0; }
+
+section.highlifetv__videos .border-green {
+  background-color: #28c56e;
+  height: 3px;
+  width: 15%;
+  border-radius: 5px; }
+
+section.highlifetv__videos .hightext {
+  font-size: 1.7rem; }
+
+section.highlifetv__videos .low-text {
+  font-size: 1.5rem;
+  color: #28c56e;
+  font-family: "Karla-i", sans-serif; }
+
+section.highlifetv__photos .videos {
+  height: 15rem; }
+  section.highlifetv__photos .videos img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+section.highlifetv__photos .hightext {
+  font-size: 1.7rem; }
+
+section.highlifetv__photos .low-text {
+  font-size: 1.5rem;
+  color: #28c56e;
+  font-family: "Karla-i", sans-serif; }
+
+section.main-filter .filter-text {
+  color: #28c56e; }
+
+section.book {
+  transition: all 0.2s; }
+  section.book .filter-text {
+    color: #28c56e; }
+
+section.submit .mailing {
+  padding-top: 10rem; }
+
+section.high .high-text {
+  background-color: #28c56e; }
+
+.bottom-line {
+  border-bottom: 0.3px solid #c7c7c7;
+  margin-bottom: 1rem; }
 
 nav.navbar {
   font-family: "Karla", sans-serif;
@@ -342,9 +473,17 @@ nav.navbar {
     display: flex;
     justify-content: center; }
   nav.navbar .navbar-nav .nav-link {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #333;
-    line-height: .3rem; }
+    line-height: 0.2rem;
+    font-family: "Karla-s", sans-serif; }
+    nav.navbar .navbar-nav .nav-link :hover {
+      border-bottom: 2px #000;
+      color: orangered; }
+  nav.navbar .nav-search {
+    width: 2rem;
+    height: 2rem;
+    filter: invert(56%) sepia(66%) saturate(522%) hue-rotate(94deg) brightness(101%) contrast(83%); }
 
 nav .user-account {
   display: flex;
@@ -354,82 +493,155 @@ nav .user-account {
 footer {
   align-items: center;
   justify-content: center; }
+  footer .navbar-nav .nav-link {
+    font-family: "Oswald-r", sans-serif;
+    font-size: 20rem; }
+  footer .icons img {
+    width: 1.5rem;
+    height: 1.5rem; }
 
-header.lifeblood .header-1 {
-  padding: 0; }
-  header.lifeblood .header-1 .header-1__img {
-    width: 100%; }
+header .banner-link img {
+  transition: all 0.3s; }
 
-header.lifeblood .header-2 {
-  background: #f5f5f5; }
-  header.lifeblood .header-2 h1 {
-    font-size: 3rem;
-    color: #333; }
-  header.lifeblood .header-2 span {
-    background-color: #dd1725;
-    display: block;
-    width: 5rem;
-    height: .5rem; }
-  header.lifeblood .header-2 .lifeblood__header-nav {
-    color: #333; }
-    header.lifeblood .header-2 .lifeblood__header-nav a {
-      position: relative;
-      margin-right: 1rem; }
-    header.lifeblood .header-2 .lifeblood__header-nav a:not(:last-child)::after {
-      content: "";
+header .banner-link:hover img {
+  filter: saturate(1.5); }
+
+header.lifeblood {
+  font-family: "Karla-s", sans-serif; }
+  header.lifeblood .header-1 {
+    padding: 0; }
+    header.lifeblood .header-1 .header-1__img {
+      width: 100%; }
+  header.lifeblood .header-2 {
+    background: #f5f5f5; }
+    header.lifeblood .header-2 h1 {
+      font-size: 3rem;
+      color: #333; }
+    header.lifeblood .header-2 span {
       background-color: #dd1725;
-      display: inline-block;
-      width: 0.3rem;
-      height: 3rem;
-      position: absolute;
-      top: -3px;
-      right: -9px; }
-    header.lifeblood .header-2 .lifeblood__header-nav a:hover {
-      color: #ff0000; }
-
-header.lifeblood .header-3 {
-  font-family: "Karla", sans-serif;
-  color: #fff;
-  position: absolute;
-  bottom: 15px;
-  right: 30px;
-  font-size: 2.5rem;
-  font-weight: bold; }
-
-header.lifeblood .arm {
-  height: 200px;
-  width: 100%;
-  position: relative;
-  background-color: #28c56e; }
-  header.lifeblood .arm img {
+      display: block;
+      width: 4rem;
+      height: 0.3rem; }
+    header.lifeblood .header-2 .lifeblood__header-nav {
+      color: #333;
+      font-family: "Karla", sans-serif; }
+      header.lifeblood .header-2 .lifeblood__header-nav a {
+        position: relative;
+        margin-right: 1rem; }
+      header.lifeblood .header-2 .lifeblood__header-nav a:not(:last-child)::after {
+        content: "";
+        background-color: #dd1725;
+        display: inline-block;
+        width: 0.1rem;
+        height: 2rem;
+        position: absolute;
+        top: -3px;
+        right: -9px; }
+      header.lifeblood .header-2 .lifeblood__header-nav a:hover {
+        color: #ff0000; }
+  header.lifeblood .header-3 {
+    font-family: "Karla-s", sans-serif;
+    color: #fff;
     position: absolute;
-    top: 50%;
-    left: 0;
-    width: 55%;
-    transform: translate(0, -50%); }
-
-header.lifeblood .question {
-  position: relative;
-  padding-right: 5rem;
-  height: 100%;
-  width: 100%;
-  overflow: hidden; }
-  header.lifeblood .question img {
-    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    font-size: 2.5rem;
+    font-weight: bold; }
+  header.lifeblood .arm {
+    height: 200px;
     width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    position: relative;
+    background-color: #28c56e; }
+    header.lifeblood .arm img {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 55%;
+      transform: translate(0, -50%); }
+  header.lifeblood .question {
+    position: relative;
+    padding-right: 5rem;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; }
+    header.lifeblood .question img {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  header.lifeblood .atm {
+    position: relative;
+    background-color: #f4ae17;
+    height: 100%; }
+    header.lifeblood .atm img {
+      position: absolute;
+      width: 40%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 10px 10px;
+      padding: 10px 10px; }
 
-header.lifeblood .atm {
-  position: relative;
-  background-color: #f4ae17;
-  height: 100%; }
-  header.lifeblood .atm img {
-    position: absolute;
-    width: 40%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 10px 10px;
-    padding: 10px 10px; }
+header.highlifetv {
+  background-color: #000;
+  min-height: max-content; }
+  header.highlifetv h1 {
+    font-size: 3rem;
+    color: #28c56e; }
+  header.highlifetv .main-text {
+    font-family: "Karla-i", sans-serif;
+    font-size: 2rem; }
+  header.highlifetv .highlifetv__row {
+    padding: 5rem 0; }
+  header.highlifetv .highlifetv__img img {
+    width: 100%;
+    height: 33rem;
+    object-fit: cover; }
+  header.highlifetv .icons img {
+    filter: invert(100%) sepia(0%) saturate(7488%) hue-rotate(354deg) brightness(120%) contrast(98%);
+    width: 2rem;
+    height: 2rem; }
+
+header.store .store__banner {
+  background: url(/img/main-img.png) no-repeat center center;
+  height: 65vh; }
+
+header.store .store__text--one {
+  font-family: "Richie", sans-serif;
+  font-size: 5rem;
+  color: #ff0088; }
+
+header.store_product .container {
+  padding: 0 10rem; }
+
+header.store_product .icons img {
+  color: #28c56e;
+  width: 2rem;
+  height: 2rem; }
+
+header .highlife {
+  background: url(/img/niara-1.png);
+  max-width: 100%;
+  height: 40rem;
+  background-size: cover;
+  background-position: center; }
+
+header .photo-one {
+  background: url(/img/niara-2.png);
+  max-width: 100%;
+  height: 20rem;
+  background-size: cover;
+  background-position: center; }
+
+header .photo-two {
+  background: url(/img/niara-3.png);
+  max-width: 100%;
+  margin-top: 1rem;
+  height: 19rem;
+  background-size: cover;
+  background-position: center; }
+
+header .highlife__text {
+  background-color: #28c56e;
+  padding: 0 1rem; }
