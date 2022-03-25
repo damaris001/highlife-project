@@ -213,6 +213,11 @@ section {
       .high-text{
         background-color: $mid-green;
       }
-    
+      .play-icon {
+        width:2rem;
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(298deg) brightness(103%) contrast(104%);
+
+
+      }
   }
 }

@@ -462,6 +462,10 @@ section.submit .mailing {
 section.high .high-text {
   background-color: #28c56e; }
 
+section.high .play-icon {
+  width: 2rem;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(298deg) brightness(103%) contrast(104%); }
+
 .bottom-line {
   border-bottom: 0.3px solid #c7c7c7;
   margin-bottom: 1rem; }
